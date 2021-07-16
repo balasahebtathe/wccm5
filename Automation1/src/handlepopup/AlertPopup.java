@@ -14,16 +14,16 @@ public class AlertPopup {
 		WebDriver driver=new ChromeDriver();// launch the chrome browser
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);//implicitlywait
 		driver.manage().window().maximize();//maximize the browser
-		driver.get("file:///C:/Users/ANKUSH/Desktop/Popup1.html");//launch the web application
+		driver.get("file:///D:/B.Tathe/html/Popup1.html");//launch the web application
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//button")).click();;
 		Thread.sleep(4000);
 		
        Alert al = driver.switchTo().alert();
-      String textpopup =  al.getText();
-      System.out.println(textpopup);
+   //   String textpopup =  al.getText();
+  //    System.out.println(textpopup);
       
-      al.accept();
+     al.accept();
 	}
 
 }

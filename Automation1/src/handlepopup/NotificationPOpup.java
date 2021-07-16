@@ -1,8 +1,6 @@
 package handlepopup;
 
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,15 +21,13 @@ public class NotificationPOpup {
 		driver.findElement(By.xpath("//a[@class=\" alignTag\"]")).click();;
 		Thread.sleep(4000);
 		
-     /* Alert al = driver.switchTo().alert();
+    /* Alert al = driver.switchTo().alert();
       String textpopup =  al.getText();
       System.out.println(textpopup);
       
       al.accept();
-      Thread.sleep(4000);
-      driver.close();*/
+      Thread.sleep(4000);*/
+      driver.close(); 
 
-
-	}
-
+}
 }
